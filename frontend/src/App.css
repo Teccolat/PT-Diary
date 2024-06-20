@@ -1,0 +1,317 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    position: absolute;
+    right:0px;
+    z-index: 1000;
+    width: 60%;
+    top: 100px;
+  }
+  .sidebarDisplay{
+   display: none;
+  }
+  .content-container {
+    width: 100%;
+  }
+.header-section {
+  width: 100%;
+}
+.workout-details-editable {
+  width: 100%;
+}
+.Bar{
+  display: block;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sidebar {
+    display: block;
+    width: 20%;
+  }
+  .content-container {
+    width: 80%;
+  }
+.header-section {
+  width: 80%;
+}
+
+.workout-details-editable {
+  width: 80%;
+}
+.Bar{
+  display: none;
+}
+}
+
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  margin: 0px;
+  /* width: 20%; */
+
+  /*Aesthetics*/
+  background: white;
+  border-radius: 7px;
+}
+
+.content-container {
+  /*Strictly Necessary */
+
+  float: right;
+
+  /*Aesthetics*/
+  background: #f1f1f1;
+}
+
+.header-section {
+  /*Strictly Necessary */
+  position: fixed;
+  height: 100px; /*Adjust the hight to your purposes*/
+
+  /*Aesthetics*/
+  background: white;
+  border-radius: 7px;
+}
+
+.headerLink {
+  position: absolute;
+  top: 80px;
+  right: 1;
+}
+
+.header-section button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.header-section a {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  text-decoration: none;
+}
+
+.Bar{
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+/* Stayling for workout detail */
+
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+
+.workouts h2 {
+  font-weight: 500;
+  color: #333;
+}
+
+/* new workout form */
+label,
+input,
+select {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+}
+select {
+  padding: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+.sideBar-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 10px 10px;
+}
+.sideBar-container a {
+  margin: 20px;
+}
+
+.sideBar-container button {
+  width: 70px;
+  margin: 20px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.sideBar-content h2 {
+  font-size: 1.5em;
+  flex-shrink: 1;
+}
+
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.main-content-section {
+  margin-top: 100px; /*The height of the   header */
+  display: flex;
+  flex-flow: row wrap;
+  /* margin:  40px auto; */
+  padding: 0px 0px 5px 15px;
+}
+
+/* Style the section for listing workout summary for client and PT */
+.home {
+  width: 500px;
+  /* align-self: center; */
+  flex-shrink: 0;
+}
+
+.formContainer {
+  margin: 50px 20px 10px 50px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  background: white;
+  padding: 25px 90px 25px 90px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100;
+}
+
+.formContainer h3 {
+  margin: 5px;
+  padding: 20px;
+  color: #333;
+}
+
+/* Styling for Help page */
+.help-container {
+  /* background-color: #f1f1f1;
+  transform: translate(0%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  z-index: 10;
+  border: 1px solid white;
+  opacity: 0.95;
+  display: flex; */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.instruction-body {
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  font-family: "Poppins";
+}
+
+.show-instruction-popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.closeInstructionsBtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background:none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color:gray;
+}
+.show-instruction-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+/* Styling for Profile page */
+.profile-details {
+  display: block;
+  font-family: "Poppins";
+  cursor: pointer;
+  background: #fff;
+  padding: 6px;
+  margin: 20px;
+  color: #333;
+}
+
