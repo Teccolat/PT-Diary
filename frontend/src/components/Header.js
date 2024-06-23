@@ -26,9 +26,9 @@ function Header({ user, dispatch, setUser }) {
     navigate("/login");
   }
   return (
-    <div>
+    <div headerTestId="HeaderTitle">
       {/* Title of the APP- Header */}
-      <h1>Personla Trainer Diary</h1>
+      <h1>Personal Trainer Diary</h1>
       <div>
         {/* Only visble for small screen and will controle the sidebar content to be visible or not*/}
         <button onClick={BarHandlerShow}>

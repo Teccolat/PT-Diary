@@ -1,0 +1,6 @@
+# ignore all directories with the name node_modules
+node_modules/
+
+# add .env file to .gitignore
+echo ".env" >> .gitignore
+
